@@ -10,3 +10,6 @@ PI = 3.14159
 
 # Palabras reservadas no pueden ser usadas como nombres de variables
 # Ejemplo: if, else, while, for, def, class, etc.
+
+nombre, apellido = input("Ingresa tu nombre y tu apellido: ").split()
+print(f"Hola {nombre} {apellido}, bienvenido a Python!")
