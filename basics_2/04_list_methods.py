@@ -65,6 +65,7 @@ print("Tortuga" in animales)
 lista_ex = [1,2,3,4,5]
 lista_ex.append(6)
 lista_ex.insert(1, 10)
+
 # Se puede hacer esto para insertar cualquier numero en cualquier indice y modificar el que ya estaba en ese lugar
 lista_ex[0] = 0
 print(lista_ex)
@@ -105,6 +106,14 @@ print(lista_c)
 # Cuenta cuántas veces aparece el número 2 en la lista usando count().
 # Comprueba si el número 7 está en la lista usando in.
 
+print("\nMas ejercicios:")
+lista_d = [5,2,8,1,9,4,2]
+lista_d.sort()
+print(lista_d)
+
+print(lista_d.count(2))
+
+print(7 in lista_d)
 
 # Ejercicio 5: Copia vs. Referencia
 # Crea una lista llamada original con los números [1, 2, 3].
@@ -114,6 +123,23 @@ print(lista_c)
 # Modifica el primer elemento de la lista referencia a 10.
 # Imprime las cuatro listas (original, copia_1, copia_2, referencia) y observa los cambios.
 
+print("\nEjercicios de original y copia: ")
+original = [1,2,3]
+
+copia_1 = original[:]
+print(copia_1)
+
+copia_2 = original.copy()
+print(copia_2)
+
+referencia = original
+referencia[0] = 10
+print(referencia)
+
 # Ejercicio 6: Ordenar strings sin diferenciar mayúsculas y minúsculas.
 # Crea una lista con las siguientes cadenas: ["Manzana", "pera", "BANANA", "naranja"].
 # Ordena la lista sin diferenciar entre mayúsculas y minúsculas.
+
+cadenas = ["Manzana", "pera", "BANANA", "naranja"]
+cadenas.sort()
+print(cadenas)
