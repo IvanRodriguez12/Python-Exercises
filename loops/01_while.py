@@ -38,12 +38,14 @@ else:
 # Pedir datos al usuario
 numero = -1
 
-while numero < 0:
-    numero = int(input("\nIngresa un numero positivo: "))
-    if numero < 0:
-        print ("Ingresa un numero positivo putamae")
-
-print("Bien ahi pa es positivo ")
+#while numero <= 0:
+#    try: 
+#        numero = int(input("\nIngresa un numero positivo: "))
+#        if numero <= 0:
+#            print ("Ingresa un numero positivo putamae")
+#    except:
+#        print("Eso no es un numero, ingresa un numero positivo")
+#print("Bien ahi pa es positivo ")
 
 ###
 # EJERCICIOS (while)
@@ -51,18 +53,53 @@ print("Bien ahi pa es positivo ")
 
 # Ejercicio 1: Cuenta atrás
 # Imprime los números del 10 al 1 usando un bucle while.
+
 print("\nEjercicio 1:")
+num = 10
+
+while num >= 1:
+    print(num)
+    num = num - 1
+
 
 # Ejercicio 2: Suma de números pares (while)
 # Calcula la suma de los números pares entre 1 y 20 (inclusive) usando un bucle while.
+
 print("\nEjercicio 2:")
+num1 = 0
+suma = 0
+
+while num1 <= 20:
+    if num1 % 2 == 0:
+        suma = num1 + suma
+    num1 += 1
+print(f"\nLa suma de los numeros pares del 1 al 20 es de: {suma}")
 
 # Ejercicio 3: Factorial de un número
 # Pide al usuario que introduzca un número entero positivo.
 # Calcula su factorial usando un bucle while.
 # El factorial de un número entero positivo es el producto de todos los números del 1 al ese número. Por ejemplo, el factorial de 5
 # 5! = 5 x 4 x 3 x 2 x 1 = 120.
+
 print("\nEjercicio 3:")
+num2 = 0
+num3 = 1
+factorial = 1
+
+
+while num2 <= 0:
+    try:
+        num2 = int(input("Ingrese un numero: "))
+        if num2 <= 0:
+            print("Ingresa un numero positivo mamonson")
+        else:
+            while num3 <= num2:
+                factorial = factorial * num3
+                num3 += 1
+        print(f"\nEl factorial de {num2} es {factorial}")
+    except:
+        print("Ingresa un numero positivo no otra cosa")
+
 
 # Ejercicio 4: Validación de contraseña
 # Pide al usuario que introduzca una contraseña.
