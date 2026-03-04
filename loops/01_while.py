@@ -107,6 +107,18 @@ while num2 <= 0:
 # Usa un bucle while para seguir pidiendo la contraseña hasta que cumpla con los requisitos.
 # Si la contraseña es válida, imprime "Contraseña válida".
 print("\nEjercicio 4:")
+contrasena = " "
+largo = len(contrasena)
+
+while largo < 8:
+    if largo < 8:
+        contrasena = input("\nIngrese una contrasena de 8 caracteres: ")
+        largo = len(contrasena)
+        
+        if largo < 8:
+            print("Contraseña invalida papu")
+        else:
+            print("Contrasena valida juju que capo")
 
 # Ejercicio 5: Tabla de multiplicar
 # Pide al usuario que introduzca un número.
