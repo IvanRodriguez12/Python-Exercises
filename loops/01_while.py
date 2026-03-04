@@ -35,6 +35,15 @@ while contador1 < 10:
 else:
     print("El bucle ha terminado")
 
+# Pedir datos al usuario
+numero = -1
+
+while numero < 0:
+    numero = int(input("\nIngresa un numero positivo: "))
+    if numero < 0:
+        print ("Ingresa un numero positivo putamae")
+
+print("Bien ahi pa es positivo ")
 
 ###
 # EJERCICIOS (while)
