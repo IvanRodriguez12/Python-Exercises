@@ -38,14 +38,14 @@ else:
 # Pedir datos al usuario
 numero = -1
 
-#while numero <= 0:
-#    try: 
-#        numero = int(input("\nIngresa un numero positivo: "))
-#        if numero <= 0:
-#            print ("Ingresa un numero positivo putamae")
-#    except:
-#        print("Eso no es un numero, ingresa un numero positivo")
-#print("Bien ahi pa es positivo ")
+while numero <= 0:
+   try: 
+       numero = int(input("\nIngresa un numero positivo: "))
+       if numero <= 0:
+           print ("Ingresa un numero positivo putamae")
+   except:
+       print("Eso no es un numero, ingresa un numero positivo")
+print("Bien ahi pa es positivo ")
 
 ###
 # EJERCICIOS (while)
@@ -106,6 +106,7 @@ while num2 <= 0:
 # La contraseña debe tener al menos 8 caracteres.
 # Usa un bucle while para seguir pidiendo la contraseña hasta que cumpla con los requisitos.
 # Si la contraseña es válida, imprime "Contraseña válida".
+
 print("\nEjercicio 4:")
 contrasena = " "
 largo = len(contrasena)
@@ -123,7 +124,16 @@ while largo < 8:
 # Ejercicio 5: Tabla de multiplicar
 # Pide al usuario que introduzca un número.
 # Imprime la tabla de multiplicar de ese número (del 1 al 10) usando un bucle while.
+
 print("\nEjercicio 5:")
+usuario_num = int(input("Introduzca un numero: "))
+cont = 0
+
+while cont <= 10:
+    multiplicacion = cont * usuario_num
+    print(f"{cont} X {usuario_num} = {multiplicacion} ")
+    cont += 1
+
 
 # Ejercicio 6: Números primos hasta N
 # Pide al usuario que introduzca un número entero positivo N.
