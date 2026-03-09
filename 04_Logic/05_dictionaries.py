@@ -44,3 +44,7 @@ print(a)
 # Verificar que un diccionario tenga ese campo
 print("nombre" in persona)
 print("religion" in persona)
+
+# Traer los valorres o las claves
+print(persona.values())
+print(persona.keys())
