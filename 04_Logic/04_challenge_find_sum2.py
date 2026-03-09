@@ -11,3 +11,20 @@ def encontrar_suma_numeros(nums, goal):
 num = [2,3,7,4,5,6]
 goal = 5
 encontrar_suma_numeros(num,goal)
+
+
+# Otra forma de hacerlo es usando un diccionario para guardar los numeros y sus indices, asi evitamos el doble for y reducimos la complejidad a O(n)
+
+def encontrar_suma_numeros1(nums, goal):
+    vistos = {}
+
+    for index, value in enumerate(nums):
+        no_visto = goal - vistos
+        if no_visto in vistos: return [vistos[value], index]
+        vistos[value] = no_visto
+
+    return None 
+
+num = [2,3,7,4,5,6]
+goal = 5
+encontrar_suma_numeros1(num, goal)

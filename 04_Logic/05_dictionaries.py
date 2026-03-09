@@ -48,3 +48,6 @@ print("religion" in persona)
 # Traer los valorres o las claves
 print(persona.values())
 print(persona.keys())
+
+for key, value in persona.items():
+    print(f"{key}: {value}")
