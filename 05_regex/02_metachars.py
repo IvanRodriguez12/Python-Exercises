@@ -58,3 +58,35 @@ if valid:
     print("El numero ingresado es valido")
 else:
     print("No")
+
+# $ sirve para indicar el final de una cadena
+text = "Hola mundo"
+pattern = r"mundo$"
+
+valid = re.search(pattern, text)
+
+if valid:
+    print("Valido")
+else:
+    print("No valido")
+
+# Tenemos una lista de archivos, necesitamos saber los nombres de los ficheros con extension .txt
+files = "file1.txt file2.pdf midu-of.webp secret.txt"
+pattern = r"\w+\.txt"
+
+find = re.findall(pattern, files)
+print(find)
+
+# \b coincide con el final o principio de las palabras
+words = "casa cosa casada casana"
+pattern = r"\bc.sa\b"
+
+find = re.findall(pattern, words)
+print(find)
+
+# | indica para una cosa u otra
+fruits = "banana, manzana, granada, mandarina"
+pattern = r"banana|manzana"
+
+matches = re.findall(pattern, fruits)
+print(matches)
