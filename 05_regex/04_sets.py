@@ -49,3 +49,10 @@ print(matches)
 ## Buscar corner cases que no pasa y arreglarlo:
 "lo.que+sea@shopping.online"
 "michael@gov.co.uk"
+
+# [^]: Coincide con cualquier caracter que no esté dentro de los corchetes
+text = "Hola mundo"
+pattern = r"[^aeiou]"
+matches = re.findall(pattern, text)
+
+print(matches)
